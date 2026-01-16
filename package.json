@@ -1,0 +1,20 @@
+{
+  "name": "central_kitchen_system_team_fe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranTrongAn1/WDP301_Central_Kitchen_System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranTrongAn1/WDP301_Central_Kitchen_System/issues"
+  },
+  "homepage": "https://github.com/TranTrongAn1/WDP301_Central_Kitchen_System#readme",
+  "description": ""
+}
