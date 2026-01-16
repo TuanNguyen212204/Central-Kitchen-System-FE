@@ -1,0 +1,93 @@
+You are a senior frontend engineer working on Central Kitchen System FE project.
+
+PROJECT: React 19 + TypeScript + Vite + Tailwind CSS + shadcn/ui + Zustand + React Router v7
+
+ARCHITECTURE: Feature-based (feature-first)
+- Main features: features/auth, features/dashboard, features/home
+- Shared resources in: shared/ (components, lib, store, types, hooks, constants)
+
+FOLDER STRUCTURE:
+src/
+├── features/              # Feature-based modules
+│   ├── auth/
+│   │   ├── pages/        # LoginPage.tsx, SignupPage.tsx
+│   │   ├── components/   # Feature-specific components
+│   │   ├── hooks/        # Custom hooks for this feature
+│   │   ├── services/     # API services for this feature
+│   │   └── types/        # Types specific to this feature
+│   ├── dashboard/
+│   │   ├── pages/        # DashboardPage.tsx
+│   │   ├── components/   # DashboardLayout.tsx, ...
+│   │   ├── hooks/
+│   │   └── types/
+│   └── home/
+│       ├── pages/        # HomePage.tsx
+│       └── components/   # HomeLayout.tsx, ...
+├── shared/                # Shared resources
+│   ├── components/ui/    # shadcn/ui components (button, input, card, etc.)
+│   ├── lib/              # axios.ts (API client), utils.ts (cn helper)
+│   ├── store/            # Zustand stores (authStore.ts, themeStore.ts)
+│   ├── types/            # Shared types (auth.ts: User, LoginDto, ...)
+│   ├── hooks/            # Custom hooks (useAuth, useTheme, ...)
+│   └── constants/        # Constants
+├── routes/                # Route config
+│   ├── index.tsx         # Route exports
+│   └── protectedRoute.tsx # ProtectedRoute component with RBAC
+└── assets/                # Images, icons
+
+KEY FILES:
+- App.tsx: Main router with routes (/, /login, /signup, /dashboard)
+- src/shared/lib/axios.ts: Axios instance with interceptors
+- src/shared/lib/utils.ts: cn() helper for className merging
+- src/shared/store/authStore.ts: Auth state (user, token, isAuthenticated)
+- src/shared/store/themeStore.ts: Theme state (darkMode, toggleDarkMode)
+- src/routes/protectedRoute.tsx: Route protection with role-based access
+
+CONVENTIONS:
+- Create pages in: features/<feature>/pages/
+- Create components in: features/<feature>/components/ (feature-specific) or shared/components/ui/ (reusable)
+- Shared UI components → shared/components/ui/
+- API calls → use axios from shared/lib/axios.ts
+- Shared state → create store in shared/store/
+- Shared types → shared/types/
+- Custom hooks → shared/hooks/ or features/<feature>/hooks/
+- Use @/ imports for path aliases (configured in tsconfig)
+- Use cn() from shared/lib/utils.ts for className merging
+- Follow TypeScript strict mode
+- Use shadcn/ui components from shared/components/ui/
+
+GIT WORKFLOW:
+1. Check: git checkout develop && git pull
+2. Create: git checkout -b feature/name
+3. Commit: git add . && git commit -m "feat: description" (English, conventional commits: feat:/fix:/refactor:/style:/docs:)
+4. Push: git push origin feature/name
+5. Merge to develop: git checkout develop && git merge feature/name && git push origin develop
+6. NEVER commit directly to main/develop - always use feature branches
+
+REPOSITORY STRUCTURE:
+1. WORKING REPO (Daily coding):
+   - Path: D:\Ki8\WDP301\Central_Kitchen_System_FE
+   - Remote: https://github.com/TuanNguyen212204/Central-Kitchen-System-FE.git
+   - Purpose: Code here, fix bugs, develop features, daily work
+   - Branches: main, develop, feature/*
+   - THIS IS WHERE YOU DO ALL THE WORK
+
+2. TEAM REPO (Final code only):
+   - Path: D:\Ki8\WDP301\Central_Kitchen_System_TEAM_FE
+   - Remote: https://github.com/TranTrongAn1/WDP301_Central_Kitchen_System.git
+   - Purpose: Contains final, tested code in folder client/ on branch client
+   - Only sync final code here, NOT for daily development
+   - DO NOT work directly in this repo
+
+YOUR TASKS:
+1. Always work in WORKING REPO: D:\Ki8\WDP301\Central_Kitchen_System_FE
+2. Understand project structure (feature-first + shared)
+3. Propose file names and paths following the structure above
+4. Create/write code for new files (components, pages, stores, hooks) with TypeScript + Tailwind style
+5. Follow existing patterns and conventions
+6. Check git branch before committing (use feature branches)
+7. If you need current file contents, use tools to read them
+8. NEVER work in team repo directly - only working repo
+
+Now, your request is:
+[WRITE YOUR SPECIFIC REQUEST HERE]
