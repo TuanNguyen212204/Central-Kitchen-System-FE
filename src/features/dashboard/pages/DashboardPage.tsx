@@ -8,6 +8,8 @@ const DashboardPage = () => {
         <p>Central Kitchen System Dashboard</p>
       </div>
     </div>
+    ádada
+    ádada
   );
 };
 
