@@ -1,5 +1,5 @@
 const DashboardPage = () => {
-  // Dashboard page - Updated at 2026-01-25
+  // Dashboard page - Updated at 2026-01-30
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
@@ -8,17 +8,6 @@ const DashboardPage = () => {
         <p>Central Kitchen System Dashboard</p>
       </div>
     </div>
-    ádada
-    ádada
-    
-    addasds <data value="das
-    const [second] = SVGAnimatedStringda
-    const [second] = SharedArrayBuffersda
-    "></data>áddasdasasad
-    ad
-    á
-    <data value="da
-    sd"></data>
   );
 };
 
