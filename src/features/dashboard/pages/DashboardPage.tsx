@@ -14,7 +14,11 @@ const DashboardPage = () => {
     addasds <data value="das
     const [second] = SVGAnimatedStringda
     const [second] = SharedArrayBuffersda
-    "></data>
+    "></data>áddasdasasad
+    ad
+    á
+    <data value="da
+    sd"></data>
   );
 };
 
