@@ -8,7 +8,7 @@ const DashboardPage = () => {
         <p>Central Kitchen System Dashboard</p>
       </div>
     </div>
-  );
+adadsad  );
 };
 
 export default DashboardPage;
