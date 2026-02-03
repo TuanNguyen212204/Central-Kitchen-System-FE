@@ -19,7 +19,9 @@ export const ProtectedRoute = ({ allowedRoles }: ProtectedRouteProps) => {
     if (!normalizedAllowedRoles.includes(user.role.toLowerCase())) {
       return <Navigate to="/unauthorized" replace />;
     }
-  }
+  }MediaStreamAudioSourceNode
+  dá
+  d
 
   return <Outlet />;
 };
