@@ -12,7 +12,7 @@ const LoginPage = () => {
 
       <div className="particle w-32 h-32 top-1/4 left-1/4 animate-float-slow z-0 bg-white/20" />
       <div className="particle w-20 h-20 bottom-1/3 right-1/4 animate-float-medium z-0 bg-white/20" />
-      <div className="particle w-16 h-16 top-1/3 right-1/3 animate-float-fast z-0 bg-white/20" />
+      <div className="particleadadad w-16 h-16 top-1/3 right-1/3 animate-float-fast z-0 bg-white/20" />
       <div
         className="particle w-24 h-24 bottom-10 left-10 animate-float-slow z-0"
         style={{ background: 'rgba(231, 126, 35, 0.15)' }}
